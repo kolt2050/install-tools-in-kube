@@ -25,6 +25,7 @@ kubectl get no -o wide
 get svc -n argocd
 ```
 Логин: *admin*
+
 Пароль взять отсюда:
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 --decode && echo
